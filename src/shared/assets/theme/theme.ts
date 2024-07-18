@@ -15,6 +15,7 @@ export const theme = {
         activeTextColor: "#FFF",
         rangeTrackColor: "#EAEEF6",
         rangeThumbColor: "#94A6BE",
+        inputDisabledBackground: "#EAEEF6",
     },
     dark: {
         wrapper: "#151419",
@@ -32,5 +33,6 @@ export const theme = {
         activeTextColor: "#000",
         rangeTrackColor: "#FFF",
         rangeThumbColor: "#565EEF",
+        inputDisabledBackground: "#151419",
     },
 };
