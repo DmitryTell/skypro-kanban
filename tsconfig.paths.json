@@ -2,10 +2,7 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@pages/": ["./src/pages/"],
-            "@widgets/": ["./src/widgets/"],
-            "@features/": ["./src/features/"],
-            "@entities/": ["./src/entieties/"],
+            "@entities": ["./src/entities/"],
             "@shared/*": ["./src/shared/*"]
         }
     }

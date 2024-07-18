@@ -1,0 +1,1 @@
+export const addZeroBefore = (num: number) => String(num).length < 2 ? `0${num}` : `${num}`;
