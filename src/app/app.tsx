@@ -1,5 +1,11 @@
+import { GlobalStyles } from "./styles";
+
+
 export const App = () => (
-    <div>
-        <h1>Project started</h1>
-    </div>
+    <>
+        <GlobalStyles />
+        <div>
+            <h1>Project started</h1>
+        </div>
+    </>
 );
