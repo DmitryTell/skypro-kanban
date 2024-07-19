@@ -2,6 +2,7 @@ export const theme = {
     normal: {
         wrapperBackground: "#EAEEF6",
         headerBackground: "#FFF",
+        hoverLinkColor: "#000",
         logo: "#FFF",
         userNameColor: "#565EEF",
         userPanelBackground: "#FFF",
@@ -20,6 +21,7 @@ export const theme = {
     dark: {
         wrapperBackground: "#151419",
         headerBackground: "#20202C",
+        hoverLinkColor: "#FFF",
         logo: "#000",
         userNameColor: "#FFF",
         userPanelBackground: "#202229",
