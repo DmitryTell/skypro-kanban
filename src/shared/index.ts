@@ -1,4 +1,4 @@
-export * from "./assets";
+export * from "./theme";
 export * from "./helpers";
 export * from "./ts";
 export * from "./inputs";

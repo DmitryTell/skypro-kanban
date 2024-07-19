@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [react(), svgr()],
   resolve: {
     alias: {
+      "@": path.resolve(__dirname, "./src/"),
       "@entities": path.resolve(__dirname, "./src/entities/"),
       "@shared": path.resolve(__dirname, "./src/shared/"),
     },

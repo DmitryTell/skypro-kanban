@@ -2,8 +2,9 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@entities": ["./src/entities/"],
-            "@shared/*": ["./src/shared/*"]
+            "@/*": ["./src/*"],
+            "@entities/": ["./src/entities/"],
+            "@shared/": ["./src/shared/"]
         }
     }
 }

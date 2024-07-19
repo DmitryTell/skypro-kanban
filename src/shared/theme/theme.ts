@@ -1,7 +1,7 @@
 export const theme = {
     normal: {
-        wrapper: "#EAEEF6",
-        header: "#FFF",
+        wrapperBackground: "#EAEEF6",
+        headerBackground: "#FFF",
         logo: "#FFF",
         userNameColor: "#565EEF",
         userPanelBackground: "#FFF",
@@ -18,8 +18,8 @@ export const theme = {
         inputDisabledBackground: "#EAEEF6",
     },
     dark: {
-        wrapper: "#151419",
-        header: "#20202C",
+        wrapperBackground: "#151419",
+        headerBackground: "#20202C",
         logo: "#000",
         userNameColor: "#FFF",
         userPanelBackground: "#202229",
