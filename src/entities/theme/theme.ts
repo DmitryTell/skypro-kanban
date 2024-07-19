@@ -30,7 +30,7 @@ export const theme = {
         textColor: "#FFF",
         buttonBorderColor: "#FFF",
         buttonColor: "#FFF",
-        activeTextColor: "#000",
+        activeTextColor: "#151419",
         rangeTrackColor: "#FFF",
         rangeThumbColor: "#565EEF",
         inputDisabledBackground: "#151419",
