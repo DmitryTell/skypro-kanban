@@ -1,4 +1,4 @@
-import { HTMLProps } from "react";
+import { HTMLProps, ReactNode } from "react";
 
 
 export interface IButton extends HTMLProps<HTMLButtonElement> {
@@ -8,4 +8,13 @@ export interface IButton extends HTMLProps<HTMLButtonElement> {
     text: string;
     disabled?: boolean;
     onClick?: React.MouseEventHandler;
+}
+
+export interface IButtonShell extends HTMLProps<HTMLButtonElement> {
+    children: ReactNode;
+    onClick: React.MouseEventHandler;
+}
+
+export interface IButtonShellCategory extends IButtonShell {
+    $isActive: boolean;
 }

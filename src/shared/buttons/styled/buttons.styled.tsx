@@ -5,6 +5,10 @@ interface IButtonStylesProps {
     $buttonColor?: string;
 }
 
+interface IButtonShellStylesProps {
+    $isActive: boolean;
+}
+
 export const ButtonStyles = styled.button`
     width: 100%;
     height: 100%;
@@ -37,4 +41,13 @@ export const ButtonTransparentStyles = styled(ButtonStyles)<IButtonStylesProps>`
         border: none;
         color: #FFF;
     }
+`;
+
+export const ButtonShellStyles = styled.button`
+    background: transparent;
+    border: none;
+`;
+
+export const ButtonShellCategoryStyles = styled(ButtonShellStyles)<IButtonShellStylesProps>`
+    opacity: ${({ $isActive }) => ($isActive ? '1' : '0.4')};
 `;
