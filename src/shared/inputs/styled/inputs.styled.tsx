@@ -62,4 +62,9 @@ export const TextareaStyles = styled.textarea<IInputStylesProps>`
     height: 200px;
     font-family: Roboto;
     resize: none;
+
+    @media (max-width: 877px) {
+        height: 37px;
+        padding: 8px 10px;
+    }
 `;
