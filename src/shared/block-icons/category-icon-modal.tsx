@@ -10,5 +10,7 @@ export const CategoryIconModal: FC<ICategory> = ({ topic }) => (
         $backgroundColor={ categoryProps[topic].$backgroundColor }
         $fontWeight={ categoryProps[topic].$fontWeight }
         $fontColor={ categoryProps[topic].$fontColor }
-    />
+    >
+        { topic }
+    </CategoryIconModalStyles>
 );

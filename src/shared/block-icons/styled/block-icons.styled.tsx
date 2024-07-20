@@ -34,8 +34,8 @@ export const CategoryIconModalStyles = styled(CategoryIconTaskStyles)`
 `;
 
 export const StatusIcon = styled.div`
-    width: 136px;
     height: 30px;
+    padding: 10px 14px;
     background: transparent;
     border: 0.7px solid rgba(148, 166, 190, 0.4);
     border-radius: 24px;
@@ -43,11 +43,10 @@ export const StatusIcon = styled.div`
     font-size: 14px;
     line-height: 10px;
     color: rgba(148, 166, 190, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 `;
 
 export const StatusIconActive = styled(StatusIcon)<IStatusIconStylesProps>`
+    background: #94A6BE;
+    border: none;
     color: ${({ $activeTextColor }) => ($activeTextColor)};
 `;

@@ -4,3 +4,4 @@ export * from "./backdrop";
 export * from "./input-boxes";
 export * from "./button-boxes";
 export * from "./titles";
+export * from "./task";
