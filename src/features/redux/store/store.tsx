@@ -1,13 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import {
-    modalsSlice,
-} from "./slices";
+import { modalsSlice, tasksSlice } from "./slices";
 
 
 export const store = configureStore({
     reducer: {
         modals: modalsSlice.reducer,
+        tasks: tasksSlice.reducer,
     }
 });
 
