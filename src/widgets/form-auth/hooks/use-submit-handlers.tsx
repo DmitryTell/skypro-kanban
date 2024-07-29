@@ -11,9 +11,9 @@ import {
     setIsDisabled,
     clearValues,
     useUser,
+    authLogin,
+    authRegister,
 } from "@features/";
-import { authLogin } from "./auth-login";
-import { authRegister } from "./auth-register";
 
 
 export const useSubmitHandlers = () => {

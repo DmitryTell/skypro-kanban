@@ -15,8 +15,7 @@ import {
     Link,
     themeProps,
 } from "@shared/";
-import { useChangeValues } from "./hook";
-import { useSubmitHandlers } from "./api";
+import { useChangeValues, useSubmitHandlers } from "./hooks";
 import * as Styled from "./styled";
 
 
