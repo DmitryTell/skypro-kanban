@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { theme } from "@shared/";
+import { themeProps } from "@shared/";
 import Next from "./icon/next.svg?react";
 import Prev from "./icon/prev.svg?react";
 import { ICalendar } from "./interface";
@@ -65,7 +65,7 @@ export const Calendar: FC<ICalendar> = ({
                                     key={ String(index) }
                                     $isCurrentDay={ Number(day) === currentDay }
                                     $isSelected={ day === activeDay }
-                                    $activeTextColor={ theme[currentTheme].activeTextColor }
+                                    $activeTextColor={ themeProps[currentTheme].activeTextColor }
                                     onClick={ onClickNewDay }
                                 >
                                     { day }
@@ -75,7 +75,7 @@ export const Calendar: FC<ICalendar> = ({
                                     key={ String(index) }
                                     $isCurrentDay={ Number(day) === currentDay }
                                     $isSelected={ day === activeDay }
-                                    $activeTextColor={ theme[currentTheme].activeTextColor }
+                                    $activeTextColor={ themeProps[currentTheme].activeTextColor }
                                 >
                                     { day }
                                 </Styled.Cell>
@@ -88,7 +88,7 @@ export const Calendar: FC<ICalendar> = ({
         <Styled.DeadlineText>
             Срок исполнения:
             <Styled.DeadlineDate
-                $textColor={ theme[currentTheme].textColor }
+                $textColor={ themeProps[currentTheme].textColor }
             >
                 { selectedDate }
             </Styled.DeadlineDate>

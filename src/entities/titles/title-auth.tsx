@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { theme } from "@shared/";
+import { themeProps } from "@shared/";
 import { ITitle } from "./interface";
 import { TitleAuthStyles } from "./styled";
 
@@ -10,7 +10,7 @@ export const TitleAuth: FC<ITitle> = ({
     currentTheme,
 }) => (
     <TitleAuthStyles
-        $textColor={ theme[currentTheme].textColor }
+        $textColor={ themeProps[currentTheme].textColor }
     >
         { text }
     </TitleAuthStyles>

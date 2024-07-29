@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { theme } from "@shared/";
+import { themeProps } from "@shared/";
 import { IFormContainer } from "./interfaces";
 import { FormContainerUserPanelStyles } from "./styled";
 
@@ -10,9 +10,9 @@ export const FormContainerUserPanel: FC<IFormContainer> = ({
     children,
 }) => (
     <FormContainerUserPanelStyles
-        $userPanelBackground={ theme[currentTheme].userPanelBackground }
-        $userPanelBorderColor={ theme[currentTheme].userPanelBorderColor }
-        $userPanelShadowColor={ theme[currentTheme].userPanelShadowColor }
+        $userPanelBackground={ themeProps[currentTheme].userPanelBackground }
+        $userPanelBorderColor={ themeProps[currentTheme].userPanelBorderColor }
+        $userPanelShadowColor={ themeProps[currentTheme].userPanelShadowColor }
     >
         { children }
     </FormContainerUserPanelStyles>

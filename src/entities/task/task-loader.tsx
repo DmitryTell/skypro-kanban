@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { Theme, theme } from "@shared/";
+import { Theme, themeProps } from "@shared/";
 import * as Styled from "./styled";
 
 
@@ -10,7 +10,7 @@ interface ITaskLoaderProps {
 
 export const TaskLoader: FC<ITaskLoaderProps> = ({ currentTheme }) => (
     <Styled.Container
-        $formBackground={ theme[currentTheme].formBacground }
+        $formBackground={ themeProps[currentTheme].formBacground }
     >
         <Styled.TopBlock>
             <Styled.TopLoaderBig />

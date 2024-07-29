@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { theme } from "@shared/";
+import { themeProps } from "@shared/";
 import { ITitle } from "./interface";
 import { TitleModalH3Styles } from "./styled";
 
@@ -10,7 +10,7 @@ export const TitleModalH3: FC<ITitle> = ({
     currentTheme,
 }) => (
     <TitleModalH3Styles
-        $textColor={ theme[currentTheme].textColor }
+        $textColor={ themeProps[currentTheme].textColor }
     >
         { text }
     </TitleModalH3Styles>

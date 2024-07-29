@@ -1,4 +1,4 @@
-export const theme = {
+export const themeProps = {
     normal: {
         wrapperBackground: "#EAEEF6",
         headerBackground: "#FFF",

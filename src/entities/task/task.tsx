@@ -5,7 +5,7 @@ import Date from "./icon/date.svg?react";
 import {
     CategoryIconTask,
     Theme,
-    theme,
+    themeProps,
 } from "@shared/";
 import * as Styled from "./styled";
 
@@ -28,7 +28,7 @@ export const Task: FC<ITaskProps> = ({
     onClick,
 }) => (
     <Styled.Container
-        $formBackground={ theme[currentTheme].formBacground }
+        $formBackground={ themeProps[currentTheme].formBacground }
     >
         <Styled.TopBlock>
             <CategoryIconTask topic={ topic } />
@@ -40,7 +40,7 @@ export const Task: FC<ITaskProps> = ({
             </Styled.EditTaskButton>
         </Styled.TopBlock>
         <Styled.Title
-            $textColor={ theme[currentTheme].textColor }
+            $textColor={ themeProps[currentTheme].textColor }
             $isReady={ $isReady }
         >
             { title }

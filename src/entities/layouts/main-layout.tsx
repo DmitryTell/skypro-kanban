@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { theme } from "@shared/";
+import { themeProps } from "@shared/";
 import { ILayout } from "./interface";
 import * as Styled from "./styled";
 
@@ -9,7 +9,7 @@ export const MainLayout: FC<ILayout> = ({
     currentTheme,
     children,
 }) => (
-    <Styled.MainWrapper $wrapperBackground={ theme[currentTheme].wrapperBackground }>
+    <Styled.MainWrapper $wrapperBackground={ themeProps[currentTheme].wrapperBackground }>
         <Styled.Container>
             <Styled.TasksBox>
                 { children }

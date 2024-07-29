@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { theme } from "@shared/";
+import { themeProps } from "@shared/";
 import { IFormContainer } from "./interfaces";
 import { FormContainerModalStyles } from "./styled";
 
@@ -10,8 +10,8 @@ export const FormContainerModal: FC<IFormContainer> = ({
     children,
 }) => (
     <FormContainerModalStyles
-        $formBacground={ theme[currentTheme].formBacground }
-        $formBorderColor={ theme[currentTheme].formBorderColor }
+        $formBacground={ themeProps[currentTheme].formBacground }
+        $formBorderColor={ themeProps[currentTheme].formBorderColor }
     >
         { children }
     </FormContainerModalStyles>
