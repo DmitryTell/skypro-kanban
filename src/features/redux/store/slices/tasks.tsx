@@ -5,22 +5,26 @@ import { ITask } from "@shared/";
 
 export interface ITasksProps {
     tasks: ITask[];
+    currentTask: ITask | null;
     isLoading: boolean;
     title: string;
     description: string;
     topic: string;
     status: string;
     date: string;
+    errorText: string;
 }
 
 const initialState: ITasksProps = {
     tasks: [],
+    currentTask: null,
     isLoading: true,
     title: "",
     description: "",
     topic: "",
     status: "",
     date: "",
+    errorText: "",
 };
 
 export const tasksSlice = createSlice({
@@ -31,6 +35,11 @@ export const tasksSlice = createSlice({
             const { tasks } = action.payload;
 
             state.tasks = tasks;
+        },
+        setCurrentTask(state, action: PayloadAction<{ currentTask: ITask | null }>) {
+            const { currentTask } = action.payload;
+
+            state.currentTask = currentTask;
         },
         setIsLoading(state, action: PayloadAction<{ isLoading: boolean }>) {
             const { isLoading } = action.payload;
@@ -58,11 +67,18 @@ export const tasksSlice = createSlice({
             state.status = status;
             state.date = date;
         },
+        setErrorText(state, action: PayloadAction<{ errorText: string }>) {
+            const { errorText } = action.payload;
+
+            state.errorText = errorText;
+        },
     },
 });
 
 export const {
     setTasks,
+    setCurrentTask,
     setIsLoading,
     setTaskProps,
+    setErrorText,
 } = tasksSlice.actions;
